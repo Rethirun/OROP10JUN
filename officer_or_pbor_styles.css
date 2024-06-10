@@ -1,0 +1,68 @@
+body {
+  background-image: url('OROP_BG.png');
+  background-size: 100% 100%; /* Ensure the entire background image covers the container */
+  background-position: center; /* Center the background image both horizontally and vertically */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 600px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6); /* Increase transparency */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 75px; /* Add top margin to move the container down */
+}
+
+.step {
+  margin-bottom: 20px;
+}
+
+.bold-label {
+  font-weight: bold;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px; /* Add margin to create a gap */
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+}
+
+.radio-container label {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.next-btn {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.next-btn:hover {
+  background-color: #45a049;
+}

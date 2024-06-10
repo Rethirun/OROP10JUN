@@ -1,0 +1,115 @@
+body {
+  background-image: url('OTHER_BG.png');
+  background-size: 100% 100%; /* Ensure the entire background image covers the container */
+  background-position: center; /* Center the background image both horizontally and vertically */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    overflow: auto;
+    height: auto; /* Set height to auto */
+}
+
+h1 {
+  font-size: 20px; /* Set font size to 14px */
+}
+
+
+.field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.field select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.field input[type="text"] {
+    width: 97%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.field input[type="date"] {
+    width: auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.duration-container {
+    display: inline-flex; /* Display items in a row */
+    align-items: center; /* Align items vertically */
+}
+
+.duration-container .field {
+    margin-right: 20px; /* Adjust spacing between the dropdowns */
+}
+
+.duration-container label {
+    margin-right: 20px;
+}
+
+/* Remove width constraints on dropdowns */
+#length_of_service_years,
+#length_of_service_months {
+    width: auto; /* Set width to auto */
+}
+
+.field button[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+.field button[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+.required-label:after {
+    content: '*';
+    color: red;
+    margin-left: 5px;
+}
+
+.optional-label:after {
+    content: '(Optional)';
+    color: grey;
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+
+.note {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}

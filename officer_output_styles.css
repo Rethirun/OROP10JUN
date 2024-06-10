@@ -1,0 +1,70 @@
+body {
+  background-image: url('OTHER_BG.png');
+  background-size: 100% 100%; /* Ensure the entire background image covers the container */
+  background-position: center; /* Center the background image both horizontally and vertically */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.container {
+    background-color: #FFFFFF;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #1E3A61;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #1E3A61;
+}
+
+td[colspan="3"] {
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: #28a745;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #218838;
+}
+
+#error-message {
+    color: #e00;
+    font-size: 18px;
+}

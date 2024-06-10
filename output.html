@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OROP II Pension Amount</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output_styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>OROP II Pension amount for the given rank and Qualifying service:</h1>
+        {% if orop_rate == 0.0 %}
+            <p style="color: #e00; font-size: 18px;">>OOPS!! Sorry OROP II Pension is not eligible for your rank and qualifying service.</p>
+        {% else %}
+            <table>
+                <tr>
+                    <td>Rank(Name)</td>
+                    <td colspan="3">{{ rank }} {{ name }}</td>
+                </tr>
+                <tr>
+                    <td>OROP Rate</td>
+                    <td>{{ type_of_pension }}</td>
+                    <td>Rs. (Rate)</td>
+                    <td>{{ orop_rate }}</td>
+                </tr>
+                <tr>
+                    <td>Disability/War Injury (if any)</td>
+                    <td></td>
+                    <td>Rs. (Rate)</td>
+                    <td>{{ disability_rate }}</td>
+                </tr>
+                <tr>
+                    <td>Additional Pension (if applicable)</td>
+                    <td></td>
+                    <td>Rs. (Rate)</td>
+                    <td>{{ additional_pension_rate }}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Total</td>
+                    <td>Rs. (Amount)</td>
+                    <td>{{ total_amount }}</td>
+                </tr>
+                <tr>
+                    <td colspan="4" id="wef">Source: Dept of Ex-servicemen welfare Letter No: 1(1)/2019/D(pen/Pol)/VOl-II dated 20/01/2023</td>
+                </tr>
+            </table>
+        {% endif %}
+        <div class="buttons">
+            <button onclick="window.location.href='/'">Back to Home</button>
+            <button onclick="window.print()">Print</button>
+        </div>
+    </div>
+</body>
+</html>
